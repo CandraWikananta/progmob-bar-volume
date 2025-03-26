@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var edtLength: EditText
     private lateinit var btnCalculate: Button
     private lateinit var tvResult: TextView
+    private lateinit var name: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +43,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val inputWidth = edtWidth.text.toString().trim()
             val inputHeight = edtHeight.text.toString().trim()
 
+            val nama = "I Nyoman Gede Candra Wikananta"
+            val nim = "2305551065"
+            val matkul = "Pemrograman Mobile (A)"
+
             var isEmptyFields = false
+
+
 
             when {
                 inputLength.isEmpty() -> {
@@ -63,7 +70,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             if(!isEmptyFields){
                 val volume = inputLength.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()
-                tvResult.text = volume.toString()
+                volume.toString()
+                tvResult.text = "Hasil: $volume"
             }
         }
     }

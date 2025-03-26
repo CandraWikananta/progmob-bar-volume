@@ -10,9 +10,36 @@
     android:layout_margin="16dp"
     tools:context=".MainActivity">
 
+    <!--    Nama NIM dan Mata Kuliah-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Nama : I Nyoman Gede Candra Wikananta"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="NIM : 2305551065"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Mata Kuliah : Pemrograman Mobile (A)"
+        />
+
+    <!--  Text Box Panjang  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
         android:text="@string/panjang"
         />
 
@@ -22,11 +49,14 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:lines="1"
+        android:background="@drawable/edittext_border"
         />
-    
+
+    <!--  Text Box Lebar  -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
         android:text="@string/lebar"
         />
 
@@ -36,11 +66,14 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:lines="1"
+        android:background="@drawable/edittext_border"
         />
-    
+
+    <!--  Text Box Tinggi  -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
         android:text="@string/tinggi"
         />
 
@@ -50,8 +83,10 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:lines="1"
+        android:background="@drawable/edittext_border"
         />
 
+    <!--  Tombol Hitung Hasil  -->
     <Button
         android:id="@+id/btn_calculate"
         android:layout_width="match_parent"
@@ -59,6 +94,7 @@
         android:text="@string/hitung"
         />
 
+    <!--  Output Hasil  -->
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="match_parent"
@@ -67,5 +103,6 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
+        android:paddingTop="16dp"
         />
 </LinearLayout>
